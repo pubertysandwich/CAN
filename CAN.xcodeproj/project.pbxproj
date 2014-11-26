@@ -14,6 +14,8 @@
 		610C9A2C1A257F2900C042D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610C9A2B1A257F2900C042D1 /* Images.xcassets */; };
 		610C9A2F1A257F2900C042D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610C9A2D1A257F2900C042D1 /* LaunchScreen.xib */; };
 		610C9A3B1A257F2900C042D1 /* CANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C9A3A1A257F2900C042D1 /* CANTests.swift */; };
+		6151E0621A26921700B681E5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151E0601A26921700B681E5 /* Crashlytics.framework */; };
+		6151E0631A26921700B681E5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151E0611A26921700B681E5 /* Fabric.framework */; };
 		E204205C1A25A08300F11EA3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204205B1A25A08300F11EA3 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		610C9A341A257F2900C042D1 /* CANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610C9A391A257F2900C042D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610C9A3A1A257F2900C042D1 /* CANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CANTests.swift; sourceTree = "<group>"; };
+		6151E0601A26921700B681E5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		6151E0611A26921700B681E5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		E204205B1A25A08300F11EA3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = ../Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6151E0621A26921700B681E5 /* Crashlytics.framework in Frameworks */,
+				6151E0631A26921700B681E5 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,8 @@
 				610C9A2B1A257F2900C042D1 /* Images.xcassets */,
 				610C9A2D1A257F2900C042D1 /* LaunchScreen.xib */,
 				610C9A231A257F2900C042D1 /* CAN.xcdatamodeld */,
+				6151E0601A26921700B681E5 /* Crashlytics.framework */,
+				6151E0611A26921700B681E5 /* Fabric.framework */,
 				610C9A1F1A257F2900C042D1 /* Supporting Files */,
 			);
 			path = CAN;
@@ -128,6 +136,7 @@
 				610C9A181A257F2900C042D1 /* Sources */,
 				610C9A191A257F2900C042D1 /* Frameworks */,
 				610C9A1A1A257F2900C042D1 /* Resources */,
+				6151E05F1A2691F600B681E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -212,6 +221,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6151E05F1A2691F600B681E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 4191bcab2e6a58856220ecf45e2ab31718589402 167e05343b037070744acde5e50d3885479f27ec2094fa3bdf6cf78c8a61012f";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		610C9A181A257F2900C042D1 /* Sources */ = {
@@ -344,6 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CAN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CAN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
