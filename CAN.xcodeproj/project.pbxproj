@@ -14,6 +14,7 @@
 		610C9A2C1A257F2900C042D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610C9A2B1A257F2900C042D1 /* Images.xcassets */; };
 		610C9A2F1A257F2900C042D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610C9A2D1A257F2900C042D1 /* LaunchScreen.xib */; };
 		610C9A3B1A257F2900C042D1 /* CANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C9A3A1A257F2900C042D1 /* CANTests.swift */; };
+		E204205C1A25A08300F11EA3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204205B1A25A08300F11EA3 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		610C9A341A257F2900C042D1 /* CANTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CANTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610C9A391A257F2900C042D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610C9A3A1A257F2900C042D1 /* CANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CANTests.swift; sourceTree = "<group>"; };
+		E204205B1A25A08300F11EA3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = ../Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		610C9A1E1A257F2900C042D1 /* CAN */ = {
 			isa = PBXGroup;
 			children = (
+				E204205B1A25A08300F11EA3 /* Settings.swift */,
 				610C9A211A257F2900C042D1 /* AppDelegate.swift */,
 				610C9A261A257F2900C042D1 /* ViewController.swift */,
 				610C9A281A257F2900C042D1 /* Main.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				610C9A271A257F2900C042D1 /* ViewController.swift in Sources */,
 				610C9A251A257F2900C042D1 /* CAN.xcdatamodeld in Sources */,
+				E204205C1A25A08300F11EA3 /* Settings.swift in Sources */,
 				610C9A221A257F2900C042D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				610C9A401A257F2900C042D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610C9A411A257F2900C042D1 /* Build configuration list for PBXNativeTarget "CANTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				610C9A431A257F2900C042D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
