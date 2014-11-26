@@ -16,6 +16,7 @@
 		610C9A3B1A257F2900C042D1 /* CANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C9A3A1A257F2900C042D1 /* CANTests.swift */; };
 		6151E0621A26921700B681E5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151E0601A26921700B681E5 /* Crashlytics.framework */; };
 		6151E0631A26921700B681E5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151E0611A26921700B681E5 /* Fabric.framework */; };
+		E204205C1A25A08300F11EA3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E204205B1A25A08300F11EA3 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		610C9A3A1A257F2900C042D1 /* CANTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CANTests.swift; sourceTree = "<group>"; };
 		6151E0601A26921700B681E5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		6151E0611A26921700B681E5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		E204205B1A25A08300F11EA3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = ../Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		610C9A1E1A257F2900C042D1 /* CAN */ = {
 			isa = PBXGroup;
 			children = (
+				E204205B1A25A08300F11EA3 /* Settings.swift */,
 				610C9A211A257F2900C042D1 /* AppDelegate.swift */,
 				610C9A261A257F2900C042D1 /* ViewController.swift */,
 				610C9A281A257F2900C042D1 /* Main.storyboard */,
@@ -242,6 +245,7 @@
 			files = (
 				610C9A271A257F2900C042D1 /* ViewController.swift in Sources */,
 				610C9A251A257F2900C042D1 /* CAN.xcdatamodeld in Sources */,
+				E204205C1A25A08300F11EA3 /* Settings.swift in Sources */,
 				610C9A221A257F2900C042D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
