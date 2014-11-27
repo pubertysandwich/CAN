@@ -1,14 +1,17 @@
 CAN
 ===
 
-Features for pilots and flight operators
+Pilots and flight operators
 ---
 
-* Browse trips that need to be filled
-* Offer to fill a trip
+* Browse unfilled trip requests
+  - Make use of geolocation
+  - Get notified of requests as they become available
+* Offer a seat
+  - One-touch system
 
 Misc
 ---
 
 * Donate
-* Learn about upcoming CAN events
+* Upcoming events
